@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий веб-сайт Ткач Анни ТЦР-21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>Особистий веб-сайт Ткач Анни ТЦР-21</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">Головна</a></li>
+            <li><a href="#practices">Практичні роботи</a></li>
+            <li><a href="#labs">Лабораторні</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main>
+   <section id="about" class="section-box">
+    <h2>Про мене</h2>
+    <p>Привіт! Мене звати Аня, і я є студенткою Державного університету інформаційно-комунікаційних технологій. Я вивчаю інформаційні технології та захоплююся створенням веб-сайтів. На цьому сайті я ділюся своїми проєктами, практичними роботами, а також тим, чого вже вдалося навчитися в процесі навчання. Мені подобається постійно вдосконалювати свої навички і знаходити нові рішення для цікавих завдань. В майбутньому я хочу досягти успіху у сфері ІТ та зробити свій внесок у розвиток технологій.</p>
+    <!-- Додаємо фото -->
+    <img src="https://i.postimg.cc/WzCmkZGN/myphoto-jpg.jpg" alt="Фото Анни" style="max-width: 200px; border-radius: 50%;">
+</section>
+
+<section id="practices" class="section-box">
+    <h2>Практичні роботи</h2>
+    <div class="grid-container">
+        <div class="grid-item"><a href="https://anyutaa05.github.io/registration/">Практична робота №1</a></div>
+        <div class="grid-item"><a href="https://anyutaa05.github.io/htmlll/">Практична робота №2</a></div>
+        <div class="grid-item"><a href="https://anyutaa05.github.io/YouTube/">Практична робота №3</a></div>
+    </div>
+</section>
+
+<section id="labs" class="section-box">
+    <h2>Лабораторні заняття</h2>
+    <div class="grid-container">
+        <div class="grid-item"><a href="https://anyutaa05.github.io/html/lab1.html">Лабораторна робота №1</a></div>
+        <div class="grid-item"><a href="https://anyutaa05.github.io/htmlll/">Лабораторна робота №2</a></div>
+        <div class="grid-item"><a href="https://anyutaa05.github.io/YouTube/">Лабораторна робота №3</a></div>
+    </div>
+</section>
+
+</main>
+
+<script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = this.getAttribute('href');
+
+            // Приховати всі секції
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Показати вибрану секцію
+            document.querySelector(target).style.display = 'block';
+        });
+    });
+
+    // За замовчуванням показати лише "Про мене"
+    document.querySelector('#about').style.display = 'block';
+</script>
+
+<footer>
+    <p>Контактні дані: <a href="mailto:2anntkach20005@gmail.com">2anntkach20005@gmail.com</a></p>
+    <p>
+        <a href="https://github.com/Anyutaa05" target="_blank">GitHub</a> |
+        <a href="https://www.instagram.com/anyutaa05/" target="_blank">Instagram</a>
+    </p>
+    <p>&copy; Ткач Анна, 2024</p>
+</footer>
+</body>
+</html>

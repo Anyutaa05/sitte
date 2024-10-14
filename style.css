@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282828; /* Темний фон для контрасту */
+    color: #000000; /* Світлий колір тексту */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #444;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f7cac9; /* Світлий рожевий текст */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Темніший фон при наведенні */
+    border-radius: 5px;
+}
+#about img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Загальний стиль для секцій */
+.section-box {
+    background-color: #f7cac9; /* Світло-рожевий фон */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стиль заголовків у секціях */
+.section-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стиль для списків */
+.section-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Стиль для посилань */
+.section-box a {
+    color: #000000; /* Темно-синій колір для посилань */
+    text-decoration: none;
+}
+
+.section-box a:hover {
+    text-decoration: underline;
+}
+
+/* Для всього тіла */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #000000;
+}
+
+/* Для заголовку сторінки */
+header h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    color: #f7cac9;
+}
+
+/* Додаємо простір між основними секціями */
+main {
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Контейнер для сітки з практичними роботами та лабораторними */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Відстань між блоками */
+}
+
+/* Окремий блок для кожної роботи */
+.grid-item {
+    background-color: #ffffff; /* Білий фон для контрасту */
+    color: #000000; /* Чорний текст */
+    border: 2px solid #f7cac9; /* Рамка рожевого кольору */
+    border-radius: 10px; /* Округлені кути */
+    padding: 20px;
+    width: 200px; /* Фіксована ширина блоків */
+    text-align: center; /* Центруємо текст і посилання */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
+    transition: transform 0.2s; /* Анімація при наведенні */
+}
+
+/* При наведенні блок збільшується */
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Стиль для посилань у блоках */
+.grid-item a {
+    color: #000000; /* Чорний колір посилань */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+}
+footer a {
+    color: #ffffff; /* Білий колір для посилань у футері */
+    text-decoration: none; /* Видалити підкреслення */
+    margin: 0 10px; /* Відступ між посиланнями */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
